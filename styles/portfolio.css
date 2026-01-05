@@ -1,3 +1,4 @@
+/*?Device width 1920px*/
 * {
   margin: 0;
   padding: 0;
@@ -17,18 +18,23 @@
   padding: 18px 35px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 header {
   background-color: #fff8f3;
+  background: url(../images/developer.png), url(../images/header_bg.png),
+    #fff8f3;
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
   padding-top: 50px;
 }
 /* nav styles start */
 nav {
-  width: 83%;
-  max-width: 1332px;
+  width: 74%; /*?width of the nav is 1600px*/
+  max-width: 1140px;
   /* border: 2px solid red; */
-  margin: 0 auto;
+  margin: 0px auto;
 
   display: flex;
   justify-content: space-between;
@@ -50,11 +56,39 @@ nav .menu {
   gap: 51px;
   align-items: center;
 }
-nav .menu a {
+nav .menu li {
   list-style: none;
+}
+nav .menu a {
   color: #474747;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
 }
 /* nav styles end */
+
+/* banner style start */
+#banner {
+  /* border: 2px solid red; */
+  margin: 46px 38px 0 197px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 163px;
+}
+#banner .banner-content h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #474747;
+}
+#banner .banner-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #757575;
+  margin-bottom: 30px;
+}
+#banner .banner-image img {
+  max-width: 584px;
+  vertical-align: middle;
+}
+/* banner style end */

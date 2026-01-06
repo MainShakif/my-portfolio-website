@@ -33,7 +33,8 @@ header {
 }
 /* nav styles start */
 nav {
-  width: 74%; /*?width of the nav is 1140px*/
+  /* width: 74%; ?width of the nav is 1140px */
+  width: 71%;
   max-width: 1140px;
   /* border: 2px solid red; */
   margin: 0px auto;

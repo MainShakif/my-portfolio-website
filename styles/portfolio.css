@@ -9,6 +9,11 @@
   font-style: normal;
 }
 /* shared styles */
+.container {
+  width: 71.25%; /* *1140px is divided by 1600px, bcz 1600px is the width of the figma file */
+  max-width: 1140px;
+  margin: 0px auto;
+}
 #skills,
 #about,
 #resume {
@@ -58,11 +63,6 @@ header {
 }
 /* nav styles start */
 nav {
-  width: 71.25%; /* *1140px is divided by 1600px, bcz 1600px is the width of the figma file */
-  max-width: 1140px;
-  margin: 0px auto;
-  /* border: 2px solid red; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,9 +139,6 @@ nav .menu a {
 
 #about .about-container {
   background-color: #fff8f3;
-  width: 71.25%; /* *1140px is divided by 1600px, bcz 1600px is the width of the figma file */
-  max-width: 1140px;
-  margin: 0 auto;
   text-align: center;
   padding: 131px 157px;
   border-radius: 10px;
@@ -165,12 +162,6 @@ nav .menu a {
 }
 
 /* skills styles */
-
-#skills .skills-container {
-  width: 71%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
 
 #skills .skills-card {
   display: flex;
@@ -206,9 +197,9 @@ nav .menu a {
   display: flex;
   gap: 71px;
   justify-content: space-around;
-  width: 71%;
-  max-width: 1140px;
-  margin: 113px auto 0;
+}
+#resume .section-heading h3 {
+  margin-bottom: 113px;
 }
 .resume-container .resume-card {
   max-width: 558px;
@@ -250,10 +241,6 @@ footer {
 footer .footer-container {
   display: flex;
   gap: 117px;
-
-  width: 71.25%;
-  max-width: 1140px;
-  margin: 0 auto;
 }
 .footer-container .social {
   max-width: 562px;

@@ -9,6 +9,11 @@
   font-style: normal;
 }
 /* shared styles */
+#skills,
+#about,
+#resume {
+  padding-top: 130px;
+}
 .btn {
   background-color: #fd6e0a;
   font-size: 20px;
@@ -123,9 +128,7 @@ nav .menu a {
 /* banner style end */
 
 /* about section styles*/
-#about {
-  padding-top: 123px;
-}
+
 #about .about-container {
   background-color: #fff8f3;
   width: 71.25%; /* *1140px is divided by 1600px, bcz 1600px is the width of the figma file */
@@ -154,10 +157,7 @@ nav .menu a {
 }
 
 /* skills styles */
-#skills {
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
+
 #skills .skills-container {
   width: 71%;
   max-width: 1140px;
@@ -191,4 +191,41 @@ nav .menu a {
   font-weight: 500;
   color: #757575;
   line-height: 28px;
+}
+
+/* resume styles */
+#resume .resume-container {
+  display: flex;
+  gap: 71px;
+  justify-content: space-around;
+  width: 71%;
+  max-width: 1140px;
+  margin: 113px auto 0;
+}
+
+.resume-container hr {
+  margin: 30px 0;
+}
+.education .section-title,
+.experience .section-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #474747;
+  margin-bottom: 30px;
+}
+
+.resume-card .card-title {
+  font-size: 25px;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.resume-card .card-info {
+  font-size: 20px;
+  font-weight: 600;
+  color: #757575;
+  margin-bottom: 20px;
+}
+.resume-card .card-text {
+  font-size: 16px;
+  color: #757575;
 }
